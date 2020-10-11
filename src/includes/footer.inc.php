@@ -1,3 +1,5 @@
+        </div>
+      </div>
     </main>
     <?php $je_footer && include __DIR__ .'/je/footer.inc.php'; ?>
     <!-- end wrapper -->

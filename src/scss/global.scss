@@ -9,16 +9,14 @@
 @import "variables";
 @import "wrapper";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: 0;
-}
-
 body {
+  font-family: $font;
   color: $text-color;
   background-color: $body-bg;
   -webkit-font-smoothing: antialiased;
+  background-image: url('../imagens/bg-bottom-left@2x.png'), url('../imagens/bg-top-right@2x.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom,  right top;
+  background-size: 450px;
 }
 

@@ -1,0 +1,17 @@
+.main {
+  &-content {
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+
+  &-wrapper {
+
+  }
+
+  &-line {
+    @include make-row();
+  }
+}
+

@@ -23,5 +23,7 @@
 <body>
   <?php $je_topo && include __DIR__ . '/je/header.inc.php' ?>
   <!-- start wrapper -->
-  <main class="wrapper">
+  <div class="wrapper-fluid">
+    <main class="wrapper main-content">
+      <div class="main-line">
 
