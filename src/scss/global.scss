@@ -1,0 +1,24 @@
+/* global.scss */
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+
+@import "variables";
+@import "wrapper";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  color: $text-color;
+  background-color: $body-bg;
+  -webkit-font-smoothing: antialiased;
+}
+

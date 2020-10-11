@@ -1,0 +1,36 @@
+/* je/_footer.scss */
+.footer {
+  position: relative;
+  background:
+    url("../imagens/je/bg-overlay-azul.png") repeat scroll 0 0,
+    url("../imagens/je/bg-fachada-tse.png") no-repeat scroll 0 0;
+	background-size: cover;
+	height: auto;
+	color: #FFF;
+	padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 0!important;
+  padding-right: 0;
+
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #ffda59;
+  }
+
+  &-logo {
+    @include media-breakpoint-up(lg) {
+      @include make-col-ready(0);
+      @include make-col(12);
+    }
+
+    img {
+      max-width: 100px;
+    }
+  }
+}
+
+
