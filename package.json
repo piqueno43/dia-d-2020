@@ -1,5 +1,5 @@
 {
-  "name": "fato-ou-boato",
+  "name": "dia-d",
   "version": "1.0.0",
   "main": "index.php",
   "author": "Edivaldo Silva",
@@ -19,12 +19,12 @@
     "sass": "^1.26.10",
     "stylelint": "^13.7.1",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-prettier": "^1.1.2"
+    "stylelint-prettier": "^1.1.2",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-php2html": "^1.0.0"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "bootstrap": "^4.5.2",
-    "gulp-connect-php": "^1.0.3",
-    "gulp-php2html": "^1.0.0"
+    "bootstrap": "^4.5.2"
   }
 }
