@@ -1,5 +1,58 @@
+$dark-color: #212529;
+$dark-color-bg: #272B2F;
+
 body.contrast-enabled {
-  background-color: #212529;
+  background-color: $dark-color;
   background-image: none;
-  color: #ffffff;
+  color: #fff;
+
+  .topo,
+  .highlights-content,
+  main.wrapper.main-content {
+    background-color: $dark-color;
+  }
+  .aside-logo-description,
+  .header-title,
+  .card-header,
+  .card-link {
+    color: #fff!important;
+  }
+
+  .contrast .slider,
+  #header,
+  .card-body {
+    background-color: $dark-color-bg!important;
+  }
+
+  .contrast .slider{
+    &::before {
+      background-color: $whatsapp;
+    }
+  }
+
+  .header-subtitle {
+    color: #A2A2A2;
+  }
+
+  .aside {
+
+    &-description {
+      color: #fff;
+    }
+
+    &-whatsapp {
+      background-color: $dark-color-bg;
+
+      &-text {
+        color: #fff;
+      }
+    }
+  }
+
+  .btn-whatsapp {
+    background-color: $dark-color;
+    color: $whatsapp;
+    border-color: $dark-color-bg;
+  }
+
 }
