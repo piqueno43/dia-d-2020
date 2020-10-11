@@ -18,7 +18,7 @@
 	</div>
 	<div class="wrapper menu">
 		<nav class="navbar navbar-expand-xs navbar-light bg-faded navbar-toggleable-md">
-			<a class="navbar-brand" href="http://www.justicaeleitoral.jus.br" title="Página inicial da Justiça Eleitoral"> <img src="imagens/je/logo.png" class="d-inline-block align-top" alt=""> </a>
+			<a class="navbar-brand" href="http://www.justicaeleitoral.jus.br" title="Página inicial da Justiça Eleitoral"> <img src="imagens/logo-tse.png" class="d-inline-block align-top" alt=""> </a>
 
 		</nav>
 	</div>

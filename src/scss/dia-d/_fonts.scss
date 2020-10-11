@@ -1,0 +1,22 @@
+$font-path: '../fonts';
+
+@font-face {
+  font-family: "KumbhSans-Regular";
+  src: url("#{$font-path}/KumbhSans-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KumbhSans-Bold";
+  src: url("#{$font-path}/KumbhSans-Bold.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KumbhSans-Light";
+  src: url("#{$font-path}/KumbhSans-Light.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
