@@ -11,12 +11,15 @@
 
 body {
   font-family: $font;
-  color: $text-color;
-  background-color: $body-bg;
   -webkit-font-smoothing: antialiased;
-  background-image: url('../imagens/bg-bottom-left@2x.png'), url('../imagens/bg-top-right@2x.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: left bottom,  right top;
-  background-size: 450px;
+  color: $text-color;
+
+  @include media-breakpoint-up(md) {
+    background-color: $body-bg;
+    background-image: url('../imagens/bg-bottom-left@2x.png'), url('../imagens/bg-top-right@2x.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 105%,  right top;
+    background-size: 450px;
+  }
 }
 

@@ -20,7 +20,7 @@
   <meta property="og:description" content="O portal do TSE abriga informações sobre eleições, serviços ao eleitor, pesquisa de jurisprudência, publicações e outros assuntos de escopo eleitoral." />
   <meta property="og:image"       content="images/" />
 </head>
-<body>
+<body class="contrast-enabled">
   <?php $je_topo && include __DIR__ . '/je/header.inc.php' ?>
   <!-- start wrapper -->
   <div class="wrapper-fluid">

@@ -1,0 +1,170 @@
+@mixin  card-color($primary, $secundary) {
+  .card-header {
+    color: $primary;
+  }
+
+  .card-body {
+    background-color: $secundary;
+
+    @include media-breakpoint-only(md) {
+      border-bottom: 1px solid $secundary;
+    }
+  }
+
+  .card-link {
+    color: $primary;
+  }
+
+  .card-item + .card-item {
+      border-top: 1px solid $secundary;
+  }
+}
+.cards {
+  display: grid;
+  grid-gap: 1rem;
+
+  @include media-breakpoint-only(xs) {
+    grid-template-columns: 1fr;
+  }
+
+  @include media-breakpoint-only(sm) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". last";
+  }
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". last";
+
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". last last";
+  }
+
+  justify-items: stretch;
+
+  .card {
+    border: none;
+    background-color:transparent;
+
+    .card-header {
+      font-family: $font-bold;
+      border-bottom: none;
+      background-color: transparent;
+
+      @include media-breakpoint-up(xs) {
+        font-size: 26px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        font-size: 30px;
+      }
+    }
+    .card-list {
+      width: 100%;
+    }
+
+    .card-body {
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+      }
+
+
+    }
+
+    .card-item {
+      padding: 5px 10px;
+    }
+
+    .card-icon {
+      margin-right: 15px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      @include card-color($roxo, rgba(207, 192, 236, .4));
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      @include card-color($vermelho, rgba(248, 138, 148, .2));
+    }
+
+    &:last-child {
+      @include card-color($laranja, rgba(236, 195, 127, .4));
+
+      @include media-breakpoint-up(sm){
+        grid-area: last;
+      }
+    }
+  }
+
+
+  &-topo {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 45px;
+    border-bottom: 1px solid #BBBBBB;
+
+    @include media-breakpoint-only(xs){
+      display: none;
+    }
+  }
+
+}
+
+.header {
+  margin-left: 15px;
+
+  &-title {
+    color: $primary;
+    font-family: $font-bold;
+    font-size: 36px;
+  }
+
+  &-subtitle {
+    font-family: $font-light;
+    font-size: 24px;
+    color: $text-color;
+  }
+}
+
+.footer-whatsapp {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: none;
+  visibility: hidden;
+
+  &-text {
+    color: $primary;
+    font-family: $font-bold;
+    text-align: center;
+  }
+
+  @include media-breakpoint-only(xs) {
+    display: block;
+    visibility: visible;
+  }
+}
