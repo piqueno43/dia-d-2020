@@ -46,11 +46,14 @@
     align-items: center;
     background-color: rgba(177, 255, 203,.3);
 
-    &-image {}
+    &-image {
+      margin-bottom: 15px;
+    }
 
     &-text {
       color: $primary;
       font-size: 30px;
+      font-family: $font-bold;
       text-align: center;
     }
   }

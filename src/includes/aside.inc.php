@@ -6,6 +6,6 @@
   <div class="aside-whatsapp">
     <img class="aside-whatsapp-image" src="imagens/qrcode-whatsapp.svg" alt="QR code whatsapp">
     <p class="aside-whatsapp-text">Tira dúvidas eleitoral</p>
-    <button class="btn btn-whatsapp" type="button">WhatsApp (bot)</button>
+    <button class="btn btn-whatsapp btn-block" type="button">WhatsApp (bot)</button>
   </div>
 </aside>

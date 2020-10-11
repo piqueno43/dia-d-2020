@@ -6,12 +6,7 @@
     border-radius: 20px;
   }
 
-  &-wrapper {
-
-  }
-
   &-line {
     @include make-row();
   }
 }
-
