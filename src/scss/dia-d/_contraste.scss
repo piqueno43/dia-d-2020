@@ -6,15 +6,20 @@ body.contrast-enabled {
   background-image: none;
   color: $light-text;
 
+
   .topo,
   .cards-content,
   main.wrapper.main-content {
     background-color: $dark-color;
   }
+
+  .version a.btn,
   .aside-logo-description,
   .header-title,
   .card-header,
   .card-link,
+  .card-item,
+  .card-item:nth-child(1),
   .card-body span {
     color: $light-text!important;
   }
@@ -29,7 +34,7 @@ body.contrast-enabled {
     background-color: $dark-color-bg!important;
   }
 
-  .contrast .slider{
+  .contrast .slider {
     &::before {
       background-color: $whatsapp;
     }
