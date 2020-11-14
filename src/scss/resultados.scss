@@ -1,0 +1,10 @@
+@import "mixins/mixins";
+
+.cards.cards-resultado {
+  .card {
+    &:nth-child(1) {
+      @include card-color(#0AC469, rgba(0, 230, 118, .2));
+    }
+  }
+}
+

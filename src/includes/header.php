@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/global.css"/>
   <link rel="stylesheet" href="css/je.css"/>
   <link rel="stylesheet" href="css/styles.css"/>
+  <?php $resultado && print '<link rel="stylesheet" href="css/resultados.css"/>';?>
 
   <meta property="og:url"         content="https://www.justicaeleitoral.jus.br/index.html" />
   <meta property="og:type"        content="website" />

@@ -1,3 +1,7 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 @mixin item($item) {
   &-#{$item} {
       @content;
@@ -24,3 +28,34 @@
   }
 }
 
+@mixin  card-color($primary, $secundary) {
+  .card-header {
+    color: $primary;
+  }
+
+  .card-body {
+    color: $primary;
+    background-color: $secundary;
+
+    @include media-breakpoint-only(md) {
+      border-bottom: 1px solid $secundary;
+    }
+  }
+
+  .card-link {
+    color: $primary;
+  }
+
+  .card-item + .card-item {
+      border-top: 1px solid $secundary;
+  }
+
+  .card-download {
+    @extend .card-link;
+    font-size: .85rem;
+    & > span,
+    & + .card-download {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,21 +1,26 @@
 $dark-color: #212529;
 $dark-color-bg: #272B2F;
-
+$light-text: #fff;
 body.contrast-enabled {
   background-color: $dark-color;
   background-image: none;
-  color: #fff;
+  color: $light-text;
 
   .topo,
-  .highlights-content,
+  .cards-content,
   main.wrapper.main-content {
     background-color: $dark-color;
   }
   .aside-logo-description,
   .header-title,
   .card-header,
-  .card-link {
-    color: #fff!important;
+  .card-link,
+  .card-body span {
+    color: $light-text!important;
+  }
+
+  .card-icon {
+    filter: sepia(1);
   }
 
   .contrast .slider,
@@ -37,14 +42,14 @@ body.contrast-enabled {
   .aside {
 
     &-description {
-      color: #fff;
+      color: $light-text;
     }
 
     &-whatsapp {
       background-color: $dark-color-bg;
 
       &-text {
-        color: #fff;
+        color: $light-text;
       }
     }
   }

@@ -1,6 +1,6 @@
 <aside class="aside-content">
   <div class="aside-logo-block">
-    <img class="aside-logo" src="imagens/logo-eleicoes-2020.png" alt="Seu voto tem poder">
+    <img class="aside-logo" src="imagens/logo-eleicoes-2020.png" alt="Seu voto tem poder"/>
     <p class="aside-logo-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
   </div>
   <div class="aside-whatsapp">

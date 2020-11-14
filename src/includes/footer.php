@@ -1,6 +1,6 @@
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
     <?php $je_footer && include __DIR__ .'/je/footer.inc.php'; ?>
     <!-- end wrapper -->
     <script src="js/jquery-3.5.1.min.js"></script>

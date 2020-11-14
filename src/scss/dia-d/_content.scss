@@ -1,6 +1,6 @@
 @import 'toggle-switch';
 
-.highlights {
+.cards {
   &-content {
     @include make-col-ready();
 
@@ -9,7 +9,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-      @include make-col(8);
+      @include make-col(9);
     }
 
     @include media-breakpoint-up(xl) {
